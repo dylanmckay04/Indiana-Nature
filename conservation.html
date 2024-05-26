@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+        <link rel="stylesheet" href="style.css">
+        <title>Conservation Efforts</title>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Indiana Nature and Wildlife Logo">
+                </a>
+            </div>
+            <h1><a href="index.html">Indiana Nature and Wildlife</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nature.html">Indiana Nature</a></li>
+                <li><a href="wildlife.html">Indiana Wildlife</a></li>
+                <li><a href="conservation.html">Conservation Efforts</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+        <div id="wrapper">
+            <div id="conservationhero">
+                <div class="hero-text">
+                    <h1>Muscatatuck National Wildlife Refuge</h1>
+                </div>
+            </div>
+            <small>*Indiana Nature and Wildlife is not associated with the <a href="https://www.fws.gov/refuge/muscatatuck" target="_blank">Muscatatuck National Wildlife Refuge</a>*</small>
+            <main>
+                <h2>Conservation Efforts</h2>
+                <p>
+                    The Indiana Department of Natural Resources (INDNR) is responsible for the conservation of Indiana’s natural resources.
+                    The INDNR is a federally-funded agency that is part of the Indiana Department of Agriculture (IDA) and the Indiana Department of Environmental Quality (IDEQ). If you are interested in learning
+                    more about how you can help conservation efforts, please fill out the form below:
+                </p>
+                <form action="https://formspree.io/f/xgegraok" method="POST">
+                    <h2>Have Questions or Comments About Conservation Efforts?</h2>
+
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="reason">I have a:</label>
+                    <select name="reason" id="reason">
+                        <option value="question">Question</option>
+                        <option value="comment">Comment</option>
+                    </select>
+
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </main>
+            <footer>
+                <p>Copyright &copy; 2024 Indiana Nature and Wildlife</p>
+                <a href="mailto:dylan@mckay.com">dylan@mckay.com</a>
+            </footer>
+        </div>
+    </body>
+</html>

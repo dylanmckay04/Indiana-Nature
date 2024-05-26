@@ -1,0 +1,301 @@
+body, html {
+    min-height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #256600;
+    color: black;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+#homehero, #naturehero, #wildlifehero, #conservationhero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+#homehero {
+    background-image: url("images/homehero.jpg");
+}
+
+#naturehero {
+    background-image: url("images/naturehero.jpg");
+}
+
+#wildlifehero {
+    background-image: url("images/wildlifehero.jpg");
+    filter: brightness(85%);
+}
+
+#conservationhero {
+    background-image: url("images/conservationhero.jpg");
+    filter: brightness(85%);
+}
+
+#aboutme{
+    background-size: contain;
+    display: block;
+    height: 400px;
+    margin: 0px auto;
+    padding-top: 10px;
+    border-radius: 50px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+}
+
+#logo img {
+    border-radius: 15px;
+    width: auto;
+    height: 80%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E733A;
+    color: #FFF;
+    font-family: Georgia, serif;
+    padding: 1em;
+    position: relative;
+}
+
+ul {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+ul li {
+    padding: 8px 0;
+    color: #272626;
+}
+
+main {
+    padding-left: 2em;
+    padding-right: 2em;
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #5C7FA3;
+}
+
+nav a:visited {
+    color: #344873;
+}
+
+nav a:hover {
+    color: #A52A2A;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+nav li {
+    padding: 0.5em 5em;
+}
+
+header a:link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+header a:visited {
+    color: #bae286;
+}
+
+header a:hover {
+    color: #3be6ecbd;
+}
+
+#wrapper {
+    background-color: #e1ecac;
+    width: 85%;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+footer {
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+}
+
+dl {
+    background: #e7aa5a;
+    margin-top: 10px;
+    margin-left: 15px;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+dt {
+    font-weight: lighter;
+    color: #883d00;
+    font-size: 1.2em;
+    margin: 15px 0 10px 15px;
+}
+
+dd {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    color:#272626;
+}
+
+caption {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #000;
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #e7aa5a;
+}
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+form {
+    width: 80%;
+    margin: 20px auto;
+    background: #e7aa5a;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #2e6631;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #274910;
+}
+
+.reference-title {
+    font-style: italic;
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5em;
+    }
+
+    nav ul {
+        background-color: #9fdb67;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        padding: 0.5em;
+        display: block;
+        border: solid 1px black;
+    }
+
+    #homehero, #naturehero, #wildlifehero, #conservationhero {
+        height: 200px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    form input, form select, form textarea {
+        font-size: smaller;
+    }
+
+    .table-mobile {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .reference-list {
+        max-width: 100%;
+        font-size: smaller;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-image: linear-gradient(to bottom, #9fdb67 20%, #256600 80%, #274910 100%);
+    }
+    nav ul {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
